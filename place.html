@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country | Zimbabwe</title>
-    <meta name="description" content="Explore Zimbabwe's rich culture, breathtaking landscapes, and fascinating wildlife. Get key facts, weather updates, and more about this vibrant African nation.">
+    <title>Explore Zimbabwe | Country Facts, Culture & Travel Guide</title>
+    <meta name="description" content="Explore Zimbabwe's rich culture, breathtaking landscapes, and fascinating wildlife. Discover key facts, weather updates, and more about this vibrant African nation.">
+    <meta name="keywords" content="Zimbabwe, travel, African culture, wildlife, facts, Zimbabwe weather, Zimbabwe tourism">
     <meta name="author" content="Lawson Mutsa">
     <link rel="stylesheet" href="styles/place.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
+
+    <!-- Structured Data for SEO (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Place",
+      "name": "Zimbabwe",
+      "description": "Explore Zimbabwe's rich culture, breathtaking landscapes, and fascinating wildlife.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Harare",
+        "addressCountry": "Zimbabwe"
+      },
+      "image": "images/zimbabwe-large.webp"
+    }
+    </script>
 </head>
 <body>
 
@@ -20,13 +37,13 @@
         <section class="hero">
             <picture>
                 <source srcset="images/zimbabwe-large.webp" media="(min-width: 768px)">
-                <img src="images/zimbabwe-small.webp" alt="Zimbabwe Landscape">
+                <img src="images/zimbabwe-small.webp" alt="A scenic landscape of Zimbabwe showing lush greenery and a beautiful sky.">
             </picture>
         </section>
 
         <section class="info">
             <div class="data">
-                <h2>Data</h2>
+                <h2>Data About Zimbabwe</h2>
                 <p><strong>Area:</strong> 390,757 sq km</p>
                 <p><strong>Population:</strong> 15,178,979</p>
                 <p><strong>Capital:</strong> Harare</p>
@@ -38,7 +55,7 @@
             </div>
 
             <div class="weather">
-                <h2>Weather 
+                <h2>Current Weather in Zimbabwe
                     <span class="weather-icon">
                         <span class="desktop-icon">☀️</span> <!-- Normal Text Icon for Large Screens -->
                         <span class="mobile-icon">
