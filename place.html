@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zimbabwe</title>
+    <title>Country Page</title>
+    <meta name="description" content="Explore Zimbabwe's rich culture, breathtaking landscapes, and fascinating wildlife. Get key facts, weather updates, and more about this vibrant African nation.">
+    <meta name="author" content="Lawson Mutsa">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -35,7 +37,16 @@
             </div>
 
             <div class="weather">
-                <h2>Weather <span class="weather-icon">☀️</span></h2>
+                <h2>Weather 
+                    <span class="weather-icon">
+                        <span class="desktop-icon">☀️</span> <!-- Normal Text Icon for Large Screens -->
+                        <span class="mobile-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="orange" d="M6.76 4.84l-1.8-1.8-1.41 1.41 1.8 1.8L6.76 4.84zm10.45 10.45l1.8 1.8 1.41-1.41-1.8-1.8-1.41 1.41zM12 4a1 1 0 0 1 1-1h1V1h-1a3 3 0 0 0-3 3h1zm0 14a1 1 0 0 1-1 1h-1v2h1a3 3 0 0 0 3-3h-1zm6.24-11.16l1.8-1.8-1.41-1.41-1.8 1.8 1.41 1.41zM4 12H2v1h2a1 1 0 0 1 1-1zm16 0a1 1 0 0 1 1 1h2v-1h-2a1 1 0 0 1-1 1zm-7-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+                            </svg>
+                        </span> <!-- SVG Icon for Mobile View -->
+                    </span>
+                </h2>
                 <p><strong>Temperature:</strong> <span id="temperature">25</span>°C</p>
                 <p><strong>Conditions:</strong> Sunny</p>
                 <p><strong>Wind:</strong> <span id="wind-speed">10</span> km/h</p>

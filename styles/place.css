@@ -1,3 +1,14 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: grey;
+    --secondary-color: white;
+    --box-bg: rgba(255, 255, 255, 0.8);
+    --border-radius: 10px;
+}
+
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif; /* Google Font */
@@ -8,11 +19,23 @@ body {
 
 /* Header */
 header {
-    background-color: grey;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 20px;
     font-size: 2rem;
+    position: relative;
+}
+
+/* ::after pseudo-element to add a decorative line below header */
+header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 /* Hero Section (Image Container) */
@@ -37,9 +60,9 @@ header {
 }
 
 .data, .weather {
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    background: var(--box-bg);
     padding: 15px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     width: 90%;
     max-width: 300px;
     text-align: center;
@@ -70,11 +93,29 @@ header {
     }
 }
 
+/* Weather Icon Handling (Mobile vs. Desktop) */
+.desktop-icon {
+    display: inline; /* Show text icon on large screens */
+}
+.mobile-icon {
+    display: none;
+}
+
+/* On small screens, show the SVG and hide the text */
+@media (max-width: 768px) {
+    .desktop-icon {
+        display: none;
+    }
+    .mobile-icon {
+        display: inline;
+    }
+}
+
 /* Footer */
 footer {
     margin-top: 0;
-    background-color: grey;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px;
     font-size: 1rem;
