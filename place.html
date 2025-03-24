@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimbabwe</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Zimbabwe</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/zimbabwe-large.webp" media="(min-width: 768px)">
+                <img src="images/zimbabwe-small.webp" alt="Zimbabwe Landscape">
+            </picture>
+        </section>
+
+        <section class="info">
+            <div class="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 390,757 sq km</p>
+                <p><strong>Population:</strong> 15,178,979</p>
+                <p><strong>Capital:</strong> Harare</p>
+                <p><strong>Languages:</strong> English, Shona, Sindebele</p>
+                <p><strong>Currency:</strong> Zimbabwean Dollar (ZWL)</p>
+                <p><strong>Time Zone:</strong> UTC+2</p>
+                <p><strong>Calling Code:</strong> +263</p>
+                <p><strong>Internet TLD:</strong> .zw</p>
+            </div>
+
+            <div class="weather">
+                <h2>Weather <span class="weather-icon">☀️</span></h2>
+                <p><strong>Temperature:</strong> <span id="temperature">25</span>°C</p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Wind:</strong> <span id="wind-speed">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span>°C</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> 🌿 Lawson Mutsa 🌿 Zimbabwe</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+</html>

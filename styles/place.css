@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* Hero Section (Image Container) */
+.hero {
+    position: relative; /* Needed for absolute positioning */
+    max-width: 100%;
+    height: auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Default Layout (For Mobile: Data & Weather below image) */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.data, .weather {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Larger Screens (Positioning Data & Weather inside image) */
+@media (min-width: 768px) {
+    .info {
+        display: block; /* Reset flex for larger screens */
+    }
+
+    .data, .weather {
+        position: absolute;
+        width: 250px;
+    }
+
+    /* Data Box (Top Left) */
+    .data {
+        top: 250px;
+        left: 20px;
+    }
+
+    /* Weather Box (Bottom Right) */
+    .weather {
+        bottom: 0px;
+        right: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 0;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
