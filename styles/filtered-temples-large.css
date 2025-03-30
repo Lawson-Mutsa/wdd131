@@ -59,7 +59,7 @@
     }
     
     figure {
-        flex: 0 1 calc(33.% - 10px); /* Allow three items per row with gap */
+        flex: 0 1 calc(25% - 10px); /* Allow three items per row with gap */
         margin-right: 10px; /* Margin around each figure */
     }
    /*
