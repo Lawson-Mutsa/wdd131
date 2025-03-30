@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+
+    <!-- Mobile-first CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <!-- Larger screen styles (Media Query) -->
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+    
+       
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#" id="Home" class="active">Home</a></li>
+                <li><a href="#" id="Old">Old</a></li>
+                <li><a href="#" id="New">New</a></li>
+                <li><a href="#" id="Large">Large</a></li>
+                <li><a href="#" id="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples</h2>
+        <br>
+        <div id="temple-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lawson Mutsa, Zimbabwe</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

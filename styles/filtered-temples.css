@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between items */
+    align-items: center; /* Centers items vertically */
+    padding: 1rem;
+    position: relative; /* Ensures absolute positioning inside */
+}
+
+
+
+/* Navigation */
+nav {
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative; /* Change from absolute to relative */
+    margin-left: auto; /* Pushes it to the right */
+}
+
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* When menu is active, animate the hamburger into an "X" */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #333;
+    width: 200px;
+    padding: 15px;
+    list-style: none;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.nav-menu.show {
+    display: flex;
+}
+
+.nav-menu li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ff9800;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+#temple-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+figure {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+}
