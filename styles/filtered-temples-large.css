@@ -46,11 +46,7 @@
         justify-content: center;
     }
 
-    /*#temple-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }*/
+   
    
     #temple-container {
         display: flex;
@@ -62,19 +58,10 @@
         flex: 0 1 calc(25% - 10px); /* Allow three items per row with gap */
         margin-right: 10px; /* Margin around each figure */
     }
-   /*
-    figure {
-        max-width: 30%;
-    }
-*/
+  
     img {
         height: 200px;
         width: auto;
     }
-    /* Add this to your existing CSS */
-
-   
-   
-    
     
 }
