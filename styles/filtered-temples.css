@@ -34,7 +34,7 @@ nav {
 }
 
 
-.hamburger div {
+.hamburger span {
     width: 30px;
     height: 4px;
     background-color: white;
@@ -43,15 +43,15 @@ nav {
 }
 
 /* When menu is active, animate the hamburger into an "X" */
-.hamburger.active div:nth-child(1) {
+.hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-.hamburger.active div:nth-child(2) {
+.hamburger.active span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.active div:nth-child(3) {
+.hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
