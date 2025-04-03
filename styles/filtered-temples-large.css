@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+    body{
+        font-family: "Roboto Mono", monospace;
+    }
     header {
         display: flex;
         justify-content: space-between;
