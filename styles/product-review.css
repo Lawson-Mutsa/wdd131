@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+header {
+  background-color: #191919;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+form {
+  background-color: #dcd2dd;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+select, input[type="date"], textarea, input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.stars label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #eee;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ddd;
+}
+
+footer {
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+em {
+  font-weight: normal;
+  font-style: italic;
+}
+
+span {
+  color: #191919;
+  font-weight: normal;
+}
+/* Styles specific to review.html */
+.review-page,
+.review-page html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-page main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.review-page footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
