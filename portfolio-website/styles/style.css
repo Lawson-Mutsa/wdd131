@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f4f4f9;
+}
+
+/* Header Section */
+header{
+       background-color:#343434;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.links{
+    margin-right: 50px;
+}
+.links-item1{
+    margin-right: 542px;
+}
+
+.logos-item1{
+    margin-left: 150px;
+    margin-right: 2px;
+}
+
+header nav ul li{
+    list-style: none;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+header nav ul li img{
+    width: 40px;
+    height: auto;
+}
+.links-item1 img{
+    width: 70px;
+    height: auto;
+}
+
+/* Main Section */
+.typing {
+    font-size: 30px;
+    font-weight: bold;
+    color: #343434;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+  .about{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about > div{
+    margin-left: 20px;
+  }
+  .about-heading{
+    color: #343434;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  .about-paragraph{
+    margin-bottom: 30px;
+    font-size: 17px;
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height: 0.5cm;
+
+  }
+  .about-link{
+    text-decoration: none;
+    background-color: #343434;
+    color: white;
+    margin: 70px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+
+  }
+  .about img{
+    width: 300px;
+    height: auto;
+    padding-left: 120px;
+  }
+
+/* Footer Section */
+footer{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #343434;
+    padding: 25px;
+    margin-top: 40px;
+}
